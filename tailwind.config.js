@@ -2,16 +2,17 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // ajuste se tiver arquivos em subpastas
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        primary: '#FF6B6B',
-        secondary: '#4ECDC4',
+        // O rosa que você quer (estava #ff007f no seu código)
+        primary: "#ff007f", 
       },
       fontFamily: {
-        display: ['Quicksand', 'sans-serif'],
+        display: ["Quicksand", "sans-serif"],
+        body: ["Montserrat", "sans-serif"],
       },
     },
   },

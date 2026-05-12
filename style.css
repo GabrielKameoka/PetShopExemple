@@ -2,26 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Seus estilos personalizados abaixo se houver */
-
-@theme {
-  --color-primary: #ff007f;
-
-  --font-display: "Quicksand", sans-serif;
-  --font-body: "Montserrat", sans-serif;
-}
-
 /* Animação suave para os emojis/ícones */
 @keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 
 .animate-float {
