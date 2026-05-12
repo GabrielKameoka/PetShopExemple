@@ -1,8 +1,8 @@
 {
-  "name": "PetShop",
+  "name": "petshop",
   "version": "1.0.0",
-  "description": "",
-  "main": "tailwind.config.js",
+  "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,12 +13,5 @@
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "vite": "^5.1.4"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "@tailwindcss/vite": "^4.3.0"
   }
 }
