@@ -1,4 +1,8 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Seus estilos personalizados abaixo se houver */
 
 @theme {
   --color-primary: #ff007f;
