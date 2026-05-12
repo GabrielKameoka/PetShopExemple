@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ff007f;
+
+  --font-display: "Quicksand", sans-serif;
+  --font-body: "Montserrat", sans-serif;
+}
+
+/* Animação suave para os emojis/ícones */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Efeito de brilho ao passar o mouse no botão principal */
+.btn-shiny {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shiny::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 20%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(30deg);
+  transition: all 0.5s;
+}
+.btn-shiny:hover::after {
+  left: 120%;
+}
