@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br" class="scroll-smooth scroll-pt-20">
+<html lang="pt-br" class="scroll-smooth scroll-pt-20 overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-display bg-white text-gray-900">
+  <body class="font-display bg-white text-gray-900 overflow-x-hidden">
     <header
       class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100"
     >
@@ -34,9 +34,7 @@
           <a href="#local" class="hover:text-primary transition-colors"
             >Localização</a
           >
-          <a href="#FAQ" class="hover:text-primary transition-colors"
-            >FAQ</a
-          >
+          <a href="#FAQ" class="hover:text-primary transition-colors">FAQ</a>
         </nav>
         <button
           class="bg-primary text-white font-bold py-2 px-6 rounded-xl hover:shadow-lg hover:shadow-primary/30 transition-all bg-primary btn-shiny"
@@ -123,14 +121,21 @@
           <p class="text-gray-500 text-lg leading-relaxed">
             Unimos infraestrutura de ponta e amor pelos animais em cada detalhe.
           </p>
-          <div class="relative w-full max-w-xs pt-4">
+          <div class="relative w-full max-w-xs pt-8 pb-4 px-4">
+            <!-- Adicionei padding lateral para a rotação não cortar -->
+
+            <!-- A "Sombra" Inclinada -->
             <div
-              class="absolute inset-0 bg-secondary/30 rounded-3xl -rotate-6"
+              class="absolute inset-0 bg-primary/20 rounded-[3rem] -rotate-6 scale-105"
             ></div>
-            <div class="relative bg-white p-2 rounded-3xl shadow-xl">
+
+            <!-- A Caixa da Imagem -->
+            <div
+              class="relative bg-white p-3 rounded-[2.5rem] shadow-xl border border-gray-100"
+            >
               <img
                 src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=400"
-                class="rounded-2xl w-full h-48 object-cover"
+                class="rounded-[2rem] w-full h-48 object-cover"
                 alt="Equipe"
               />
             </div>
@@ -209,7 +214,8 @@
             </h2>
             <p class="text-gray-500 text-xl max-w-lg mx-auto md:mx-0">
               Nosso compromisso é tratar cada pet com o respeito e o amor que
-              eles merecem.
+              eles merecem. Então tome as rédeas do cuidado do seu melhor amigo
+              e venha tratar o seu pet como ele merece!
             </p>
           </div>
 
@@ -226,40 +232,62 @@
 
       <section
         id="clinica"
-        class="py-24 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16"
+        class="py-16 md:py-24 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16 overflow-hidden"
       >
-        <div class="md:w-1/2 relative order-2 md:order-1">
+        <!-- Lado da Imagem -->
+        <div class="w-full md:w-1/2 relative order-2 md:order-1">
+          <!-- Ajustado o blur para não vazar da tela -->
           <div
-            class="absolute -inset-4 bg-primary/10 rounded-full blur-2xl"
+            class="absolute -inset-2 md:-inset-4 bg-primary/10 rounded-full blur-2xl"
           ></div>
+
           <img
             src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?q=80&w=2070&auto=format&fit=crop"
-            class="relative rounded-[4rem] shadow-2xl border-white border-[16px] w-full h-[500px] object-cover"
+            class="relative rounded-[2.5rem] md:rounded-[4rem] shadow-2xl border-white border-8 md:border-[16px] w-full h-[300px] md:h-[500px] object-cover"
+            alt="Equipe Veterinária"
           />
         </div>
-        <div class="md:w-1/2 space-y-8 order-1 md:order-2">
+
+        <!-- Lado do Texto -->
+        <div class="w-full md:w-1/2 space-y-6 md:space-y-8 order-1 md:order-2">
           <span
-            class="bg-primary/10 text-primary px-5 py-1.5 rounded-full text-xs font-black uppercase tracking-widest"
-            >Excelência Médica</span
+            class="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest"
           >
-          <h2 class="text-5xl font-bold text-gray-900 leading-tight">
+            Excelência Médica
+          </span>
+
+          <!-- Fonte diminuída no mobile (text-3xl) e aumentada no desktop (md:text-5xl) -->
+          <h2
+            class="text-3xl md:text-5xl font-bold text-gray-900 leading-tight"
+          >
             Corpo Clínico Especializado
           </h2>
-          <p class="text-gray-600 text-lg leading-relaxed">
+
+          <p class="text-gray-600 text-base md:text-lg leading-relaxed">
             Liderada pela Dra. Vanessa, nossa equipe foca em medicina preventiva
             e diagnósticos precisos, garantindo longevidade para seu pet.
           </p>
-          <div class="grid grid-cols-2 gap-6 pt-4">
-            <div class="flex items-center gap-3 font-bold text-gray-800">
-              <span class="text-primary text-xl">🩺</span> Consultas Gerais
+
+          <!-- Grid de ícones ajustado -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 pt-4">
+            <div
+              class="flex items-center gap-3 font-bold text-gray-800 text-sm md:text-base"
+            >
+              <span class="text-primary text-xl">命</span> Consultas Gerais
             </div>
-            <div class="flex items-center gap-3 font-bold text-gray-800">
+            <div
+              class="flex items-center gap-3 font-bold text-gray-800 text-sm md:text-base"
+            >
               <span class="text-primary text-xl">💉</span> Vacinação
             </div>
-            <div class="flex items-center gap-3 font-bold text-gray-800">
+            <div
+              class="flex items-center gap-3 font-bold text-gray-800 text-sm md:text-base"
+            >
               <span class="text-primary text-xl">🦷</span> Odontologia Pet
             </div>
-            <div class="flex items-center gap-3 font-bold text-gray-800">
+            <div
+              class="flex items-center gap-3 font-bold text-gray-800 text-sm md:text-base"
+            >
               <span class="text-primary text-xl">🚑</span> Urgências
             </div>
           </div>
