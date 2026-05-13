@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PetShop exemplo | Cuidado e Carinho</title>
+    <title>VanPets exemplo | Cuidado e Carinho</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +20,7 @@
         class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
       >
         <h2 class="text-2xl font-bold text-primary">
-          Pet<span class="text-gray-900">Shop</span>
+          Van<span class="text-gray-900">Pets</span>
         </h2>
         <nav
           class="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wide"
@@ -34,11 +34,14 @@
           <a href="#local" class="hover:text-primary transition-colors"
             >Localização</a
           >
+          <a href="#FAQ" class="hover:text-primary transition-colors"
+            >FAQ</a
+          >
         </nav>
         <button
           class="bg-primary text-white font-bold py-2 px-6 rounded-xl hover:shadow-lg hover:shadow-primary/30 transition-all bg-primary btn-shiny"
         >
-          <a href="https://wa.me/5511964449982" target="_blank">Contato</a>
+          <a href="#local" target="_blank">Contato</a>
         </button>
       </div>
     </header>
@@ -59,9 +62,31 @@
             Providenciamos o mais alto padrão de cuidado para o bem-estar e
             felicidade do seu melhor amigo.
           </p>
+          <!-- Insira logo abaixo do seu </p> -->
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+          >
+            <a
+              href="#local"
+              class="bg-primary text-white text-center font-bold py-4 px-8 rounded-2xl shadow-lg hover:shadow-primary/40 hover:-translate-y-1 transition-all btn-shiny"
+            >
+              Agendar Banho e Tosa
+            </a>
+
+            <a
+              href="#servicos"
+              class="bg-white text-primary text-center font-bold py-4 px-8 rounded-2xl border-2 border-primary/20 hover:bg-primary/5 transition-all"
+            >
+              Conhecer Serviços
+            </a>
+          </div>
         </div>
 
-        <div class="relative max-w-md group" data-aos="fade-left" data-aos-delay="200">
+        <div
+          class="relative max-w-md group"
+          data-aos="fade-left"
+          data-aos-delay="200"
+        >
           <img
             src="./Pet-PNG-Background.webp"
             alt="Pet feliz após banho e tosa"
@@ -115,7 +140,8 @@
         <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
           <div
             class="bg-primary p-10 rounded-[3rem] shadow-2xl shadow-primary/20 flex flex-col justify-center min-h-[350px] md:row-span-2 text-white"
-            data-aos="fade-left" data-aos-delay="100"
+            data-aos="fade-left"
+            data-aos-delay="100"
           >
             <div
               class="bg-white/20 w-14 h-14 rounded-2xl flex items-center justify-center text-3xl mb-8 animate-float"
@@ -130,7 +156,8 @@
           </div>
           <div
             class="bg-white/70 backdrop-blur-sm p-8 rounded-[2.5rem] shadow-sm border border-white hover:shadow-md transition-shadow"
-            data-aos="fade-left" data-aos-delay="200"
+            data-aos="fade-left"
+            data-aos-delay="200"
           >
             <div
               class="bg-gray-100 w-12 h-12 rounded-xl flex items-center justify-center text-xl mb-6 animate-float"
@@ -144,9 +171,14 @@
           </div>
           <div
             class="bg-white/70 backdrop-blur-sm p-8 rounded-[2.5rem] shadow-sm border border-white hover:shadow-md transition-shadow"
-            data-aos="fade-left" data-aos-delay="300"
+            data-aos="fade-left"
+            data-aos-delay="300"
           >
-            <div class="bg-gray-100 w-12 h-12 rounded-xl flex items-center justify-center text-xl mb-6 animate-float">🏨</div>
+            <div
+              class="bg-gray-100 w-12 h-12 rounded-xl flex items-center justify-center text-xl mb-6 animate-float"
+            >
+              🏨
+            </div>
             <h3 class="text-xl font-bold mb-2">Creche & Hotel</h3>
             <p class="text-gray-500 text-sm">
               Monitoramento e atividades recreativas diárias para seu pet.
@@ -181,11 +213,12 @@
             </p>
           </div>
 
-          <div class="w-full md:w-1/2 flex justify-center order-1 md:order-2" >
+          <div class="w-full md:w-1/2 flex justify-center order-1 md:order-2">
             <img
               src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=1964&auto=format&fit=crop"
               class="w-full h-[500px] object-cover rounded-3xl md:rounded-tl-[200px] md:rounded-br-[200px] shadow-2xl border-white border-[12px]"
-              data-aos="zoom-in"
+              data-aos="fade-down"
+              data-aos-delay="300"
             />
           </div>
         </div>
@@ -213,7 +246,7 @@
             Corpo Clínico Especializado
           </h2>
           <p class="text-gray-600 text-lg leading-relaxed">
-            Liderada pela Dra. Siclana, nossa equipe foca em medicina preventiva
+            Liderada pela Dra. Vanessa, nossa equipe foca em medicina preventiva
             e diagnósticos precisos, garantindo longevidade para seu pet.
           </p>
           <div class="grid grid-cols-2 gap-6 pt-4">
@@ -227,58 +260,276 @@
               <span class="text-primary text-xl">🦷</span> Odontologia Pet
             </div>
             <div class="flex items-center gap-3 font-bold text-gray-800">
-              <span class="text-primary text-xl">🚑</span> Urgências 24h
+              <span class="text-primary text-xl">🚑</span> Urgências
             </div>
           </div>
         </div>
       </section>
 
       <section id="local" class="py-24 bg-gray-50 px-6">
-        <div
-          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16"
-        >
-          <div class="md:w-1/2">
-            <h2 class="text-4xl font-bold mb-6 font-display">
-              Visite a nossa unidade
-            </h2>
-            <div class="space-y-6 text-gray-600 text-lg">
-              <p class="flex items-center gap-4">
-                <span class="text-primary text-xl">📍</span>
-                <span class="font-medium"
-                  >Rua dos Pets, 123 - Centro, São Paulo</span
-                >
-              </p>
-              <p class="flex items-center gap-4">
-                <span class="text-primary text-xl">📞</span>
-                <span class="font-medium">(11) 99999-9999</span>
-              </p>
-              <p class="flex items-center gap-4">
-                <span class="text-primary text-xl">🕒</span>
-                <span class="font-medium">Aberto todos os dias: 08h - 22h</span>
-              </p>
-            </div>
-
-            <a
-              href="https://www.google.com/maps/dir//Xique-xique,+BA"
-              target="_blank"
-              class="inline-block mt-10 bg-gray-900 text-white font-bold py-4 px-10 rounded-2xl shadow-xl hover:bg-primary transition-all active:scale-95"
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <span
+              class="text-primary font-bold tracking-widest uppercase text-sm"
+              >Onde estamos</span
             >
-              Traçar Rota no Google Maps
-            </a>
+            <h2 class="text-4xl md:text-5xl font-bold mt-4">Nossas Unidades</h2>
+            <p class="text-gray-500 mt-4 text-lg">
+              Escolha a VanPets mais próxima de você
+            </p>
           </div>
 
-          <div
-            class="md:w-1/2 w-full h-[450px] bg-white rounded-[3rem] shadow-2xl border-8 border-white overflow-hidden relative group"
-          >
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15675.212130844418!2d-42.73350835757631!3d-10.82638032849297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x765921521a3a289%3A0xd0bc236aee3dda01!2sXique-Xique%2C%20BA%2C%2047400-000!5e0!3m2!1spt-BR!2sbr!4v1778590320851!5m2!1spt-BR!2sbr"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- UNIDADE 01: IMIRIM (HUB PRINCIPAL) -->
+            <div
+              class="bg-white rounded-[3rem] p-8 md:p-12 shadow-xl border border-gray-100 flex flex-col justify-between"
+              data-aos="fade-up"
+            >
+              <div>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span
+                    class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase"
+                    >Clínica & PetShop</span
+                  >
+                  <span
+                    class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs font-bold uppercase"
+                    >Banho e Tosa</span
+                  >
+                </div>
+                <h3 class="text-3xl font-bold mb-6">Unidade Imirim</h3>
+                <div class="space-y-4 text-gray-600">
+                  <div class="flex items-start gap-4">
+                    <span class="text-primary text-xl mt-1">📍</span>
+                    <div>
+                      <p class="font-bold text-gray-900">Clínica e Loja:</p>
+                      <p>Av. Imirim, 2736 - Imirim, São Paulo</p>
+                      <p class="font-bold text-gray-900 mt-2">Banho e Tosa:</p>
+                      <p>Localizado na unidade ao lado (nº 2730)</p>
+                    </div>
+                  </div>
+                  <p class="flex items-center gap-4">
+                    <span class="text-primary text-xl">📞</span>
+                    <span class="font-medium">(11) 94629-7000</span>
+                  </p>
+                </div>
+              </div>
+              <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                <a
+                  href="https://www.google.com/maps/dir//Av.Imirim, 2736"
+                  target="_blank"
+                  class="flex-1 bg-gray-900 text-white text-center font-bold py-4 rounded-2xl hover:bg-primary transition-all"
+                  >Ver no Mapa</a
+                >
+                <a
+                  href="https://wa.me/5511946297000"
+                  class="flex-1 border-2 border-primary/20 text-primary text-center font-bold py-4 rounded-2xl hover:bg-primary/5 transition-all"
+                  >WhatsApp Imirim</a
+                >
+              </div>
+            </div>
+
+            <!-- UNIDADE 02: SANTANA -->
+            <div
+              class="bg-white rounded-[3rem] p-8 md:p-12 shadow-xl border border-gray-100 flex flex-col justify-between"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div>
+                <div class="flex mb-6">
+                  <span
+                    class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase"
+                    >Clínica & Banho e tosa</span
+                  >
+                </div>
+                <h3 class="text-3xl font-bold mb-6">Unidade Santana</h3>
+                <div class="space-y-4 text-gray-600">
+                  <div class="flex items-start gap-4">
+                    <span class="text-primary text-xl mt-1">📍</span>
+                    <div>
+                      <p class="font-bold text-gray-900">Endereço:</p>
+                      <p>Av. Águas de São Pedro, 103 - Santana, São Paulo</p>
+                    </div>
+                  </div>
+                  <p class="flex items-center gap-4">
+                    <span class="text-primary text-xl">📞</span>
+                    <span class="font-medium">(11) 2977-1000</span>
+                    <!-- Telefone Exemplo -->
+                  </p>
+                </div>
+              </div>
+              <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                <a
+                  href="https://www.google.com/maps/dir//Av.+Águas+de+São+Pedro,+103,02302-070"
+                  target="_blank"
+                  class="flex-1 bg-gray-900 text-white text-center font-bold py-4 rounded-2xl hover:bg-primary transition-all"
+                  >Ver no Mapa</a
+                >
+                <a
+                  href="#"
+                  class="flex-1 border-2 border-primary/20 text-primary text-center font-bold py-4 rounded-2xl hover:bg-primary/5 transition-all"
+                  >WhatsApp Santana</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="FAQ" class="py-24 bg-white px-6">
+        <div class="max-w-3xl mx-auto">
+          <div class="text-center mb-16">
+            <span
+              class="text-primary font-bold tracking-widest uppercase text-sm"
+              >Transparência</span
+            >
+            <h2 class="text-4xl font-bold mt-4 text-gray-900">
+              Dúvidas Frequentes
+            </h2>
+          </div>
+
+          <div class="space-y-4">
+            <!-- Pergunta 1 -->
+            <details
+              class="group border-2 border-gray-100 rounded-[2rem] p-6 [&_summary::-webkit-details-marker]:hidden transition-all hover:border-primary/20"
+              data-aos="fade-up"
+            >
+              <summary
+                class="flex items-center justify-between cursor-pointer list-none"
+              >
+                <h3 class="text-lg font-bold text-gray-800">Pergunta 1</h3>
+                <span
+                  class="text-primary transition-transform duration-300 group-open:rotate-180"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </span>
+              </summary>
+              <p class="mt-4 text-gray-500 leading-relaxed">
+                Exemplo de <strong>Pergunta</strong> Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptate laborum animi at nobis,
+                id voluptatibus dolores quos cupiditate reiciendis ipsam cumque.
+              </p>
+            </details>
+
+            <!-- Pergunta 2 -->
+            <details
+              class="group border-2 border-gray-100 rounded-[2rem] p-6 [&_summary::-webkit-details-marker]:hidden transition-all hover:border-primary/20"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <summary
+                class="flex items-center justify-between cursor-pointer list-none"
+              >
+                <h3 class="text-lg font-bold text-gray-800">Pergunta 2</h3>
+                <span
+                  class="text-primary transition-transform duration-300 group-open:rotate-180"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </span>
+              </summary>
+              <p class="mt-4 text-gray-500 leading-relaxed">
+                Exemplo de <strong>Pergunta</strong> Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptate laborum animi at nobis,
+                id voluptatibus dolores quos cupiditate reiciendis ipsam cumque.
+              </p>
+            </details>
+
+            <!-- Pergunta 3 -->
+            <details
+              class="group border-2 border-gray-100 rounded-[2rem] p-6 [&_summary::-webkit-details-marker]:hidden transition-all hover:border-primary/20"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <summary
+                class="flex items-center justify-between cursor-pointer list-none"
+              >
+                <h3 class="text-lg font-bold text-gray-800">Pergunta 3</h3>
+                <span
+                  class="text-primary transition-transform duration-300 group-open:rotate-180"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </span>
+              </summary>
+              <p class="mt-4 text-gray-500 leading-relaxed">
+                Exemplo de <strong>Pergunta</strong> Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptate laborum animi at nobis,
+                id voluptatibus dolores quos cupiditate reiciendis ipsam cumque.
+              </p>
+            </details>
+
+            <!-- Pergunta 4 -->
+            <details
+              class="group border-2 border-gray-100 rounded-[2rem] p-6 [&_summary::-webkit-details-marker]:hidden transition-all hover:border-primary/20"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <summary
+                class="flex items-center justify-between cursor-pointer list-none"
+              >
+                <h3 class="text-lg font-bold text-gray-800">Pergunta 4</h3>
+                <span
+                  class="text-primary transition-transform duration-300 group-open:rotate-180"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </span>
+              </summary>
+              <p class="mt-4 text-gray-500 leading-relaxed">
+                Exemplo de <strong>Pergunta</strong> Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptate laborum animi at nobis,
+                id voluptatibus dolores quos cupiditate reiciendis ipsam cumque.
+              </p>
+            </details>
           </div>
         </div>
       </section>
@@ -291,14 +542,14 @@
         class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-20 border-b border-gray-800 pb-16"
       >
         <div class="space-y-6">
-          <h2 class="text-3xl font-bold italic text-primary">PetShop</h2>
+          <h2 class="text-3xl font-bold italic text-primary">VanPets</h2>
           <p class="text-gray-400 leading-relaxed max-w-xs">
             Desde xxxx sendo a segunda casa do seu melhor amigo. Tecnologia
             clínica e amor de sobra.
           </p>
           <div class="flex gap-6">
             <a
-              href="#"
+              href="https://www.instagram.com/vanpetsclinicaveterinaria/"
               class="p-2 h-10 bg-gray-900 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
               >Instagram</a
             >
@@ -342,7 +593,7 @@
       <div
         class="max-w-7xl mx-auto pt-10 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600 gap-4"
       >
-        <p>© 2026 PetShop. Carinho que vem de dentro.</p>
+        <p>© 2026 VanPets. Carinho que vem de dentro.</p>
         <div class="flex gap-8">
           <a href="#" class="hover:text-white">Privacidade</a>
           <a href="#" class="hover:text-white">Termos</a>
